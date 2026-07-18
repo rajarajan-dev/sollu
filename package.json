@@ -1,0 +1,26 @@
+{
+  "name": "sollu",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,css}\" --ignore-path .gitignore",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,css}\" --ignore-path .gitignore",
+    "clean": "turbo run clean"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.14.0",
+      "onFail": "download"
+    }
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "turbo": "^2.10.5",
+    "typescript": "^7.0.2"
+  },
+  "packageManager": "pnpm@11.14.0"
+}
