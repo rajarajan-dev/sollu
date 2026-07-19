@@ -1,4 +1,5 @@
 const { getDefaultConfig } = require('expo/metro-config')
+const { withNativeWind } = require('nativewind/metro')
 const path = require('path')
 
 const projectRoot = __dirname
@@ -24,4 +25,4 @@ config.resolver.extraNodeModules = {
   'react-native': path.resolve(projectRoot, 'node_modules/react-native'),
 }
 
-module.exports = config
+module.exports = withNativeWind(config, { input: './global.css' })
