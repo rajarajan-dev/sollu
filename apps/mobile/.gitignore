@@ -32,7 +32,9 @@ yarn-error.*
 # Environment
 .env
 .env.development
+.env.qa
 .env.production
+!.env.example
 *.pem
 
 # local env files

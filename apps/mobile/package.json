@@ -19,6 +19,8 @@
   },
   "scripts": {
     "dev": "expo start",
+    "dev:qa": "set -a; . .env.qa; set +a; expo start",
+    "build:production": "NODE_ENV=production expo export",
     "ios": "expo run:ios",
     "android": "expo run:android",
     "web": "expo start --web",

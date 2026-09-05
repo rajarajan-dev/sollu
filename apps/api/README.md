@@ -17,6 +17,13 @@ Build and start
 - pnpm run build
 - pnpm start
 
+Environment files
+
+- `.env.development` is loaded by `pnpm run dev` by default.
+- Use `pnpm run dev:qa` for QA development or `pnpm run start:qa` for the QA build.
+- `pnpm run start` loads `.env.production` for production.
+- Copy `.env.example` when creating a new local environment file.
+
 Health endpoint
 
 GET /health
